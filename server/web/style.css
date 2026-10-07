@@ -1,0 +1,52 @@
+@font-face {
+    font-family: jbmono;
+    src: url(JetBrainsMono[wght].ttf);
+}
+
+html, body {
+    background: #211;
+    color: #fee;
+
+    font-family: jbmono;
+    font-size: 24px;
+
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: 0.75em;
+}
+
+#loginbtns, #register, #login {
+    text-align: center;
+    padding: 1em;
+}
+
+#main {
+    display: flex;
+    flex-flow: column;
+
+    height: 100%;
+}
+
+#messages {
+    flex: 1;
+
+    font-family: inherit;
+    
+    margin: 0;
+    padding: 0.25em;
+
+    overflow: scroll;
+}
+
+#inputs {
+    display: flex;
+}
+
+#message {
+    flex: 1;
+}

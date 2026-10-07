@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="borealis.js"></script>
+        <title>Borealis Web Client</title>
+    </head>
+    <body>
+        <div id="loginbtns">
+            <button id="loginbtn">Login</button>
+            <button id="registerbtn">Register</button>
+        </div>
+
+        <form id="register" style="display: none">
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" name="password"><br>
+            Repeat Password: <input type="password" name="password2"><br>
+            <button type="submit">Sign up</button>
+        </form>
+
+        <form id="login" style="display: none">
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" name="password"><br>
+            <button type="submit">Log in</button>
+        </form>
+
+        <label id="main" for="message" style="display: none">
+            <pre id="messages"></pre>
+            <form id="inputs">
+                <input type="text" autocomplete="off" name="message" id="message">
+                <button id="sendbtn">Send</button>
+            </form>
+        </label>
+    </body>
+</html>
